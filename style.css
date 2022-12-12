@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+.card-background {
+    background-color: hsl(244, 38%, 16%);
+    width: 90%;
+    margin: 10% auto;
+    display: flex;
+    width: auto;
+    max-width: 800px;
+    height: 22vw;
+    min-height: 160px;
+    overflow: hidden;
+}
+
+.text-part {
+    padding: 2.5rem;
+    width: 50%;
+    position: relative;
+    float: left;
+}
+
+.image-part {
+    color: blue;
+    width: 50%;
+    height: 100%;
+    background-image: url(img/image-header-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    float: right;
+}
+
+.image-part div {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-color: hsl(277, 84%, 47%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-size: 2vw;
+}
+span {
+    color: hsl(277, 64%, 61%)
+}
+
+.text-part .body {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1vw;
+    line-height: 18px;
+    padding: 2vw 0;
+}
+
+.numbering {
+    display: flex;
+    padding-top: 2vw;
+}
+
+.numbering h2 {
+    font-family: 'Inter', sans-serif; 
+    font-size: 1.5vw;
+    margin-right: auto;
+}
+
+.numbering h2 p {
+    font-family: 'Inter', sans-serif; 
+    font-size: 0.8vw;
+    margin-right: auto;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+@media screen and (max-width: 375px){
+    .card-background {
+        background-color: hsl(244, 38%, 16%);
+        width: 90%;
+        margin: 30px auto;
+        display: block;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        border-radius: 7px;
+    }
+
+    .image-part {
+        color: blue;
+        width: 100%;
+        height: 50%;
+        background-image: url(img/image-header-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .image-part {
+        color: blue;
+        width: 100%;
+        height: 30%;
+        background-image: url(img/image-header-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 10px;
+        position: absolute;
+        top: 0px;
+    }
+
+    .text-part {
+        top: 25%;
+        padding: 2.5rem;
+        width: auto;
+        position: absolute;
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+
+    .text-part h2 {
+        color: hsl(0, 0%, 100%);
+        font-family: 'Inter', sans-serif;
+        font-size: 1.1rem;
+        display: block;
+    }
+
+    .text-part .body {
+        font-size: 0.7rem;
+        padding: 15px 0;
+    }
+
+    .text-part .numbering {
+        color: hsl(0, 0%, 100%);
+        font-family: 'Inter', sans-serif;
+        font-size: 1.1rem;
+        display: block;
+    }
+
+    .numbering h2 p {
+        font-family: 'Inter', sans-serif; 
+        font-size: 0.5rem;
+        margin-right: auto;
+        color: hsla(0, 0%, 100%, 0.75);
+        font-family: 'Lexend Deca', sans-serif;
+        margin-bottom: 20px;
+    }
+    
+}
